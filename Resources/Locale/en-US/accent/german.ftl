@@ -3,10 +3,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
 
-accent-german-words-1 = yes
-accent-german-words-1-2 = yea
-accent-german-words-replace-1 = ja
-
 accent-german-words-2 = no
 accent-german-words-replace-2 = nein
 
