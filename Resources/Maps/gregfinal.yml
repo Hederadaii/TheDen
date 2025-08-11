@@ -3702,20 +3702,6 @@ entities:
     - type: Transform
       pos: -15.336125,3.5836477
       parent: 2
-- proto: PillCanisterAiuri
-  entities:
-  - uid: 661
-    components:
-    - type: MetaData
-      desc: '"Supplements" for vitality...'
-      name: Greg's Prescription
-    - type: Transform
-      parent: 660
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: PlasmaWindow
   entities:
   - uid: 223
