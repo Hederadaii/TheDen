@@ -12,13 +12,13 @@
   maxItems: 1
   items:
     - type: loadout
-      id: LoadingEngineeringAtmosBackpackBackpack
+      id: LoadoutAtmosphericTechnicianBackpackBackpack
     - type: loadout
-      id: LoadingEngineeringAtmosBackpackSatchel
+      id: LoadoutAtmosphericTechnicianBackpackSatchel
     - type: loadout
-      id: LoadingEngineeringAtmosBackpackDuffel
+      id: LoadoutAtmosphericTechnicianBackpackDuffel
     - type: loadout
-      id: LoadingEngineeringAtmosBackpackMessenger
+      id: LoadoutAtmosphericTechnicianBackpackMessenger
 
 - type: characterItemGroup
   id: LoadoutAtmosphericTechnicianBelt
@@ -107,6 +107,14 @@
 #      id: LoadoutAtmosphericTechnicianChickenSuit
     - type: loadout
       id: LoadoutAtmosphericTechnicianWinterCoat
+    - type: loadout # Imp
+      id: LoadoutAtmosphericTechnicianOuterCoatBomberAtmos
+    - type: loadout # Imp
+      id: LoadoutAtmosphericTechnicianOuterCoatBomberAtmosLoose
+    - type: loadout # Imp
+      id: LoadoutAtmosphericTechnicianOuterCoatBomberAtmosHolo
+    - type: loadout # Imp
+      id: LoadoutAtmosphericTechnicianOuterCoatBomberAtmosHoloLoose
 
 - type: characterItemGroup
   id: LoadoutAtmosphericTechnicianShoes

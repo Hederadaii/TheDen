@@ -4,6 +4,7 @@
 # SPDX-FileCopyrightText: 2025 Tabitha
 # SPDX-FileCopyrightText: 2025 TheOneTrueWolfio
 # SPDX-FileCopyrightText: 2025 foxcurl
+# SPDX-FileCopyrightText: 2025 juniwoofs
 # SPDX-FileCopyrightText: 2025 portfiend
 # SPDX-FileCopyrightText: 2025 sleepyyapril
 #
@@ -158,30 +159,56 @@
   category: TraitsPhysicalBiological
   points: -6
   requirements:
-  - !type:CharacterJobRequirement
-    inverted: true
-    jobs:
-      - StationAi
-      - Borg
-      - MedicalBorg
-  - !type:CharacterTraitRequirement
-    inverted: true
-    traits:
-      - PlateletFactories
-  - !type:CharacterSpeciesRequirement
-    inverted: true
-    species:
-      - IPC
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - StationAi
+        - Borg
+        - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - PlateletFactories
   functions:
-  - !type:TraitReplaceComponent
-    components:
-      - type: PassiveDamage
-        allowedStates:
-        - Alive
-        - Critical
-        damageCap: 400
-        damage:
-          types:
-            Brute: -0.2
-            Burn: -0.2
-            Bloodloss: -0.3
+    - !type:TraitReplaceComponent
+      components:
+        - type: PassiveDamage
+          allowedStates:
+          - Alive
+          - Critical
+          damageCap: 400
+          damage:
+            groups:
+              Brute: -0.2
+              Burn: -0.2
+              Airloss: -0.3
+
+- type: trait
+  id: HandsFreePulling
+  category: TraitsPhysicalBiological
+  points: -10
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - StationAi
+        - Borg
+        - MedicalBorg
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - Bodybuilder
+        - Weakling
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Reptilian
+  functions:
+    - !type:TraitReplaceComponent
+      components:
+        - type: Puller
+          needsHands: false
