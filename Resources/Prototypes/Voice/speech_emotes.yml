@@ -246,10 +246,6 @@
     - BorgChassis
   chatMessages: ["chat-emote-msg-thump"]
   chatTriggers:
-    - thump
-    - thumps
-    - thumping
-    - thumped
     - thump tail
     - thumps tail
     - thumps their tail
@@ -435,6 +431,7 @@
     - BorgChassis
   chatMessages: [ mars ]
   chatTriggers:
+    - mar
     - mars
 
 - type: emote
@@ -448,6 +445,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: [ wurble ]
+  chatMessages: [ wurbles ]
   chatTriggers:
     - wurble
+    - wurbles
