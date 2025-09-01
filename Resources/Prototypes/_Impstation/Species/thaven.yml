@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2025 Shaman
+# SPDX-FileCopyrightText: 2025 portfiend
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: species
   id: Thaven
   name: species-name-thaven
@@ -30,6 +35,8 @@
 - type: speciesBaseSprites
   id: MobThavenSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking # Floof
+    TailOversuit: MobHumanoidAnyMarking # Floof
     Hair: MobHumanoidAnyMarking
     Eyes: MobThavenEyes
     Head: MobThavenHead
@@ -62,7 +69,7 @@
       points: 2 # DEN - 2 points
       required: false
     Head:
-      points: 4
+      points: 8
       required: false
     HeadTop:
       points: 8
@@ -87,7 +94,7 @@
       points: 2
       required: false
     RightLeg:
-      points: 4
+      points: 6
       required: false
     RightFoot:
       points: 6

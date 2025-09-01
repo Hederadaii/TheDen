@@ -1,4 +1,6 @@
-# Chest
+# SPDX-FileCopyrightText: 2025 Shaman
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 marking-Gills = Gills
 marking-Gills-gills = Gills
@@ -66,6 +68,12 @@ marking-ThavenLEyeGlow-glowleft = Glowing Eye (Left)
 
 marking-ThavenREyeGlow = Glowing Eye (Right)
 marking-ThavenREyeGlow-glowright = Glowing Eye (Right)
+
+marking-ThavenLEye = Colored Eye (Left)
+marking-ThavenLEye-glowleft = Colored Eye (Left)
+
+marking-ThavenREye = Colored Eye (Right)
+marking-ThavenREye-glowright = Colored Eye (Right)
 
 # RArm
 
@@ -688,31 +696,31 @@ marking-ThavenPiercings3R-piercings3R = Stud Earring
 # Tail
 
 marking-ThavenBasicTail = Basic Tail
-marking-ThavenBasicTail-basic = Basic Tail
+marking-ThavenBasicTail-basic_front = Tail
 
 marking-ThavenBigTail = Big Tail
-marking-ThavenBigTail-big1 = Tail
-marking-ThavenBigTail-big2 = Fin
+marking-ThavenBigTail-big1_front = Tail
+marking-ThavenBigTail-big2_front = Fin
 
 marking-ThavenTadpoleTail = Tadpole Tail
-marking-ThavenTadpoleTail-tadpole1 = Tail
-marking-ThavenTadpoleTail-tadpole2 = Fin
+marking-ThavenTadpoleTail-tadpole1_front = Tail
+marking-ThavenTadpoleTail-tadpole2_front = Fin
 
 marking-ThavenTailEel = Eel Tail (Underlay)
-marking-ThavenTailEel-eel1 = Tail
-marking-ThavenTailEel-eel2 = Fin
+marking-ThavenTailEel-eel1_front = Tail
+marking-ThavenTailEel-eel2_front = Fin
 
 marking-ThavenTailEelOverlay = Eel Tail (Overlay)
-marking-ThavenTailEelOverlay-eel3 = Eel Tail (Overlay)
+marking-ThavenTailEelOverlay-eel3_front = Spots
 
 marking-ThavenTailNurse = Swept Tail
-marking-ThavenTailNurse-nurse1 = Tail
-marking-ThavenTailNurse-nurse2 = Stripes
+marking-ThavenTailNurse-nurse1_front = Tail
+marking-ThavenTailNurse-nurse2_front = Stripes
 
 marking-ThavenTailStub = Stub Tail
-marking-ThavenTailStub-stub1 = Tail
-marking-ThavenTailStub-stub2 = Stripes
+marking-ThavenTailStub-stub1_front = Tail
+marking-ThavenTailStub-stub2_front = Stripes
 
 marking-ThavenTailThresher = Thresher Tail
-marking-ThavenTailThresher-thresher1 = Tail
-marking-ThavenTailThresher-thresher2 = Stripes
+marking-ThavenTailThresher-thresher1_front = Tail
+marking-ThavenTailThresher-thresher2_front = Stripes
