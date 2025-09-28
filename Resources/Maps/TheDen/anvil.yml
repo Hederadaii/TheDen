@@ -1,3 +1,11 @@
+# SPDX-FileCopyrightText: 2025 Falcon
+# SPDX-FileCopyrightText: 2025 Shaman
+# SPDX-FileCopyrightText: 2025 This_Is_Gray
+# SPDX-FileCopyrightText: 2025 sheepie
+# SPDX-FileCopyrightText: 2025 therealDLondon
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 meta:
   format: 7
   category: Map
@@ -24023,7 +24031,7 @@ entities:
   - uid: 2661
     components:
     - type: MetaData
-      name: Mantis' Office
+      name: Mantis Office
     - type: Transform
       pos: -92.5,11.5
       parent: 2
@@ -24157,7 +24165,7 @@ entities:
   - uid: 27687
     components:
     - type: MetaData
-      name: Mantis' Office
+      name: Mantis Office
     - type: Transform
       pos: -92.5,6.5
       parent: 2
@@ -26352,7 +26360,7 @@ entities:
   - uid: 7021
     components:
     - type: MetaData
-      name: Mantis' Quarters
+      name: Mantis Quarters
     - type: Transform
       pos: -90.5,11.5
       parent: 2
@@ -217543,7 +217551,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Epistemics - Mantis' Office
+      id: Epistemics - Mantis Office
   - uid: 36713
     components:
     - type: Transform
@@ -241997,7 +242005,7 @@ entities:
   - uid: 26346
     components:
     - type: MetaData
-      name: Mantis' Bedroom
+      name: Mantis Bedroom
     - type: Transform
       pos: -88.5,11.5
       parent: 2

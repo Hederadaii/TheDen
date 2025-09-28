@@ -39,8 +39,10 @@
 # SPDX-FileCopyrightText: 2025 SixplyDev
 # SPDX-FileCopyrightText: 2025 Skubman
 # SPDX-FileCopyrightText: 2025 Tabitha
+# SPDX-FileCopyrightText: 2025 TheLuggage05
 # SPDX-FileCopyrightText: 2025 Timfa
 # SPDX-FileCopyrightText: 2025 VMSolidus
+# SPDX-FileCopyrightText: 2025 bigsantino1
 # SPDX-FileCopyrightText: 2025 foxcurl
 # SPDX-FileCopyrightText: 2025 portfiend
 # SPDX-FileCopyrightText: 2025 sleepyyapril
@@ -136,8 +138,9 @@ trait-description-GermanAccent = You speak with a German accent.
 trait-name-RussianAccent = Russian accent
 trait-description-RussianAccent = You speak with a Russian accent.
 
+# imp, changed description to note added word replacements
 trait-name-FrenchAccent = French accent
-trait-description-FrenchAccent = You speak with a French accent.
+trait-description-FrenchAccent = You speak with a French accent, including French word replacements.
 
 trait-name-ItalianAccent = Italian accent
 trait-description-ItalianAccent = You speak with a Italian accent.
@@ -771,3 +774,8 @@ trait-name-HealingFactor = Healing Factor
 trait-description-HealingFactor =
     Whether due to mutation or natural hardiness, you're harder to kill than most. You slowly regenerate from some common forms of damage.
     Your natural healing is no longer capped, and you will slowly recover from brute, burn and bloodloss damage while you are still alive.
+
+trait-name-PainNumbness = Pain Numbness
+trait-description-PainNumbness =
+    Whether due to a rare mutation, freak medical accident, or some other reason, you're not able to feel pain
+    making it much eaiser to miss possibly life threatening injuries.
