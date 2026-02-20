@@ -1,5 +1,8 @@
+# SPDX-FileCopyrightText: 2025 Winter
 # SPDX-FileCopyrightText: 2025 leo
 # SPDX-FileCopyrightText: 2025 portfiend
+# SPDX-FileCopyrightText: 2025 sleepyyapril
+# SPDX-FileCopyrightText: 2026 sheepie
 #
 # SPDX-License-Identifier: MIT
 
@@ -83,6 +86,54 @@
   sprites:
     - sprite: Objects/Fun/toys.rsi
       state: vegaplushie
+
+- type: foodSequenceElement
+  id: AzaleaPlushie # got permission from june -port
+  scale: 0.8, 0.8
+  name: food-sequence-cotton-burger-content-plushie-azalea
+  sprites:
+  - sprite: _DEN/Objects/Fun/azaleaplushie.rsi
+    state: icon
+
+- type: foodSequenceElement
+  id: WhistlerPlushie
+  scale: 0.8, 0.8
+  name: food-sequence-cotton-burger-content-plushie-whistler
+  sprites:
+    - sprite: _DEN/Objects/Fun/whistlerplushie.rsi
+      state: icon
+
+- type: foodSequenceElement
+  id: PattyPlushie # got permission from uts -june
+  scale: 0.8, 0.8
+  name: food-sequence-cotton-burger-content-plushie-patty
+  sprites:
+  - sprite: _DEN/Objects/Fun/pattyplushie.rsi
+    state: icon
+
+- type: foodSequenceElement
+  id: TwiggyPlushie # got permission from twiggy -june
+  scale: 0.8, 0.8
+  name: food-sequence-cotton-burger-content-plushie-patty
+  sprites:
+  - sprite: _DEN/Objects/Fun/twiggyplushie.rsi
+    state: icon
+
+- type: foodSequenceElement
+  id: StuPlushie # got permission from horse -june
+  scale: 0.8, 0.8
+  name: food-sequence-cotton-burger-content-plushie-patty
+  sprites:
+  - sprite: _DEN/Objects/Fun/pattyplushie.rsi
+    state: icon
+
+- type: foodSequenceElement
+  id: PhilPlushie # got permission from leo -june
+  scale: 0.8, 0.8
+  name: food-sequence-cotton-burger-content-plushie-phil
+  sprites:
+  - sprite: _DEN/Objects/Fun/philplushie.rsi
+    state: icon
 
 # DeltaV Plushies
 
@@ -182,7 +233,7 @@
   name: food-sequence-cotton-burger-content-plushie-dino
   sprites:
   - sprite: _Floof/Objects/Fun/floof_plush.rsi
-    state: dino
+    state: tricera
 
 - type: foodSequenceElement
   id: DragonPlushie
@@ -192,14 +243,6 @@
   - sprite: _Floof/Objects/Fun/floof_plush.rsi
     state: dragon
     color: "#ff0000"
-
-- type: foodSequenceElement
-  id: SlimeTiderPlushie
-  scale: 0.8, 0.8
-  name: food-sequence-cotton-burger-content-plushie-slime-tider
-  sprites:
-  - sprite: _Floof/Objects/Fun/floof_plush.rsi
-    state: slime
 
 # Einstein Engines Plushies (i guess?)
 

@@ -53,6 +53,7 @@
 # SPDX-FileCopyrightText: 2024 slarticodefast
 # SPDX-FileCopyrightText: 2024 zzylex
 # SPDX-FileCopyrightText: 2025 Blitz
+# SPDX-FileCopyrightText: 2025 DoctorJado
 # SPDX-FileCopyrightText: 2025 Eightballll
 # SPDX-FileCopyrightText: 2025 KekaniCreates
 # SPDX-FileCopyrightText: 2025 Rosycup
@@ -66,6 +67,7 @@
 # SPDX-FileCopyrightText: 2025 portfiend
 # SPDX-FileCopyrightText: 2025 sleepyyapril
 # SPDX-FileCopyrightText: 2025 wheelwrightt
+# SPDX-FileCopyrightText: 2026 Jakumba
 #
 # SPDX-License-Identifier: MIT AND AGPL-3.0-or-later
 
@@ -110,6 +112,7 @@
   - type: Spillable
     solution: absorbed
     spillWhenThrown: false
+    alsoMeleeAttack: true
   - type: DrainableSolution
     solution: absorbed
   - type: Wieldable
@@ -181,6 +184,7 @@
     - type: Spillable
       solution: absorbed
       spillWhenThrown: false
+      alsoMeleeAttack: true
     - type: DrainableSolution
       solution: absorbed
     - type: Wieldable
@@ -473,3 +477,39 @@
       tags:
         - Mop
         - Rag #VASH change. Needed for bounties.
+
+- type: entity
+  parent: BaseItem
+  id: WireBrush
+  name: wire brush
+  description: A bristly steel wire brush, perfect for scraping away even the toughest patches of rust.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Janitorial/wirebrush.rsi
+    state: icon
+  - type: Item
+    storedSprite:
+      sprite: Objects/Specific/Janitorial/wirebrush.rsi
+      state: storage
+    size: Small
+  - type: Tag
+    tags:
+    - WireBrush
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 50
+      Plastic: 50
+  - type: Tool
+    qualities:
+    - Brushing
+    useSound:
+      path: /Audio/Items/wirebrushing.ogg
+  - type: StaticPrice
+    price: 22
+  - type: MeleeWeapon
+    wideAnimationRotation: 45
+    damage:
+      types:
+        Piercing: 3
+    soundHit:
+      path: "/Audio/Weapons/bladeslice.ogg"

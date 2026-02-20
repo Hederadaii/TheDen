@@ -1,10 +1,11 @@
+# SPDX-FileCopyrightText: 2025 Eightballll
 # SPDX-FileCopyrightText: 2025 Falcon
 # SPDX-FileCopyrightText: 2025 Jakumba
 # SPDX-FileCopyrightText: 2025 Shaman
 # SPDX-FileCopyrightText: 2025 beck
 # SPDX-FileCopyrightText: 2025 sleepyyapril
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
+# SPDX-License-Identifier: MIT AND AGPL-3.0-or-later
 
 # these are HEAVILY based on the Bingle free-agent ghostrole from GoobStation, but reflavored and reprogrammed to make them more Robust (and less of a meme.)
 # all credit for the core gameplay concepts and a lot of the core functionality of the code goes to the folks over at Goob, but I re-wrote enough of it to justify putting it in our filestructure.
@@ -35,6 +36,11 @@
     - MindRoleGhostRoleTeamAntagonist
     raffle:
       settings: short
+    #Den
+    requirements:
+    - !type:CharacterOverallTimeRequirement
+      min: 36000 #Den - 10 hours
+    #Den End
   - type: Sprite
     granularLayersRendering: true
     drawdepth: Mobs
@@ -161,9 +167,11 @@
         Structural: -0.5
   - type: ThermalVision
     lightRadius: 7
+    drawOverlay: false
     color: "#d70aa0"
   - type: NightVision # Den
-    color: "#d70aa0"
+    drawOverlay: false
+    color: "#808080"
   - type: Prying
     pryPowered: true
     force: true
@@ -181,6 +189,10 @@
       components:
       - AACTablet
   # DEN
+  - type: Clumsy
+    clumsyCatching: false
+    clumsyVaulting: false
+    clumsySound: "/Audio/_NF/Mecha/mechstep.ogg"
   - type: Bloodstream
     bloodReagent: Oil
     maxBleedAmount: 1
@@ -239,13 +251,6 @@
         - SmallMobMask
         layer:
         - SmallMobLayer
-  # DEN
-  - type: ThermalVision
-    lightRadius: 7
-    color: "#d70aa0"
-  - type: NightVision # Den
-    color: "#d70aa0"
-  # DEN
 
 # Tier 1: These guys are mooks. They're vulnerable, bad at dragging, and don't do much damage, but they have a disabler ranged attack.
 - type: entity
