@@ -72,6 +72,8 @@
         weight: 9
       - id: PlushieSpaceLizard
         weight: 1
+      - id: PlushieLizardInversed
+        weight: 0.5
     - !type:GroupSelector
       children:
       - id: PlushieCarp
@@ -124,6 +126,8 @@
       - !type:EntSelector
         id: PlushieInkdrop
       - !type:EntSelector
+        id: PlushieAgena
+      - !type:EntSelector
         id: PlushieSharkBlue
       - !type:EntSelector
         id: PlushieSharkGrey
@@ -168,6 +172,8 @@
         weight: 0.3
       - !type:EntSelector # TheDen
         id: PlushieWhistler
+      - !type:EntSelector
+        id: PlushieJak # TheDen
     - !type:GroupSelector
       children:
       - !type:EntSelector

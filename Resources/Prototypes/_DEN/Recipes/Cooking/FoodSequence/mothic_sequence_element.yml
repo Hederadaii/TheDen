@@ -3,7 +3,9 @@
 # SPDX-FileCopyrightText: 2025 portfiend
 # SPDX-FileCopyrightText: 2025 sleepyyapril
 # SPDX-FileCopyrightText: 2026 Eightballll
+# SPDX-FileCopyrightText: 2026 Jakumba
 # SPDX-FileCopyrightText: 2026 Kellaris
+# SPDX-FileCopyrightText: 2026 crumchy
 # SPDX-FileCopyrightText: 2026 sheepie
 #
 # SPDX-License-Identifier: MIT
@@ -133,8 +135,16 @@
   id: InkdropPlushie # got permission from eight -eight
   scale: 0.8, 0.8
   name: food-sequence-cotton-burger-content-plushie-inkdrop
-  sprites: 
+  sprites:
   - sprite: _DEN/Objects/Fun/inkdropplushie.rsi
+    state: icon
+
+- type: foodSequenceElement
+  id: JakPlushie # got permission from Jak
+  scale: 0.8, 0.8
+  name: food-sequence-cotton-burger-content-plushie-jak
+  sprites:
+  - sprite: _DEN/Objects/Fun/jakplushie.rsi
     state: icon
 
 # DeltaV Plushies
@@ -390,6 +400,14 @@
   sprites:
   - sprite: Objects/Fun/catplushie.rsi
     state: grey
+
+- type: foodSequenceElement
+  id: AgenaPlushie
+  scale: 0.8, 0.8
+  name: food-sequence-cotton-burger-content-plushie-agena
+  sprites:
+    - sprite: _DEN/Objects/Fun/agenaplushie.rsi
+      state: icon
 
 - type: foodSequenceElement
   id: OrangeCatPlushie

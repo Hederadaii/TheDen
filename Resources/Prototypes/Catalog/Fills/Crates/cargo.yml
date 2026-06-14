@@ -14,6 +14,8 @@
 # SPDX-FileCopyrightText: 2025 portfiend
 # SPDX-FileCopyrightText: 2025 sleepyyapril
 # SPDX-FileCopyrightText: 2026 Kellaris
+# SPDX-FileCopyrightText: 2026 Shaman
+# SPDX-FileCopyrightText: 2026 crumchy
 # SPDX-FileCopyrightText: 2026 sheepie
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
@@ -379,8 +381,13 @@
       orGroup: Plushies
     - id: PlushieInkdrop
       prob: 0.01
+    - id: PlushieAgena
+      prob: 0.01
       orGroup: Plushies
     - id: PlushieMothObservant # TheDen
+      prob: 0.01
+      orGroup: Plushies
+    - id: PlushieJak # TheDen
       prob: 0.01
       orGroup: Plushies
     #useful
@@ -388,6 +395,8 @@
       prob: 0.01
       orGroup: Useful
     - id: Omnitool
+      prob: 0.001
+    - id: ThavenArmyKnife # TheDen
       prob: 0.001
       orGroup: Useful
     - id: SoapOmega

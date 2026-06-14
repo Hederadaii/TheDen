@@ -120,12 +120,14 @@
         - PlushieAlienGermMini
         - PlushieAzalea # Den
         - PlushieWhistler # Den
+        - PlushieAgena # Den
         - PlushiePatty # Den
         - PlushieTwiggy # Den
         - PlushieStu  # Den
         - PlushiePhil  # Den
         - PlushieInkdrop # Den
         - PlushieMothObservant # Den
+        - PlushieJak # Den
       chance: 0.5
       offset: 0.2
 
