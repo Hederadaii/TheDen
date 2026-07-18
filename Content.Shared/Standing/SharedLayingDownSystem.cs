@@ -1,15 +1,13 @@
-// SPDX-FileCopyrightText: 2024 Mnemotechnican <69920617+Mnemotechnician@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Remuchi <72476615+Remuchi@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2024 sleepyyapril <flyingkarii@gmail.com>
-// SPDX-FileCopyrightText: 2024 sleepyyapril <***>
-// SPDX-FileCopyrightText: 2025 RedFoxIV <38788538+RedFoxIV@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 sleepyyapril <123355664+sleepyyapril@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mnemotechnican
+// SPDX-FileCopyrightText: 2024 Remuchi
+// SPDX-FileCopyrightText: 2024 VMSolidus
+// SPDX-FileCopyrightText: 2024 gluesniffler
+// SPDX-FileCopyrightText: 2024 sleepyyapril
+// SPDX-FileCopyrightText: 2025 RedFoxIV
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
+// SPDX-License-Identifier: MIT AND AGPL-3.0-or-later
 
+using Content.Shared._DEN.CCVars;
 using Content.Shared.ActionBlocker;
 using Content.Shared.CCVar;
 using Content.Shared.DoAfter;
@@ -40,8 +38,15 @@ public abstract class SharedLayingDownSystem : EntitySystem
     [Dependency] private readonly MovementSpeedModifierSystem _speed = default!;
     [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
 
+    private bool _canProne;
+
     public override void Initialize()
     {
+        base.Initialize();
+
+        _canProne = _config.GetCVar(DenCCVars.ProneEnabled);
+        Subs.CVar(_config, DenCCVars.ProneEnabled, OnProneAllowedChanged);
+
         CommandBinds.Builder
             .Bind(ContentKeyFunctions.ToggleStanding, InputCmdHandler.FromDelegate(ToggleStanding))
             .Bind(ContentKeyFunctions.ToggleCrawlingUnder, InputCmdHandler.FromDelegate(HandleCrawlUnderRequest, handle: false))
@@ -52,6 +57,11 @@ public abstract class SharedLayingDownSystem : EntitySystem
         SubscribeLocalEvent<StandingStateComponent, StandingUpDoAfterEvent>(OnStandingUpDoAfter);
         SubscribeLocalEvent<LayingDownComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeed);
         SubscribeLocalEvent<LayingDownComponent, EntParentChangedMessage>(OnParentChanged);
+    }
+
+    private void OnProneAllowedChanged(bool newValue)
+    {
+        _canProne = newValue;
     }
 
     public override void Shutdown()
@@ -66,7 +76,8 @@ public abstract class SharedLayingDownSystem : EntitySystem
         if (session is not { AttachedEntity: { Valid: true } uid } _
             || !Exists(uid)
             || !HasComp<LayingDownComponent>(session.AttachedEntity)
-            || _gravity.IsWeightless(session.AttachedEntity.Value))
+            || _gravity.IsWeightless(session.AttachedEntity.Value)
+            || !_canProne)
             return;
 
         RaiseNetworkEvent(new ChangeLayingDownEvent());

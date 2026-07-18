@@ -19123,3 +19123,42 @@ Entries:
   id: 1882
   time: '2026-05-29T20:51:51.0000000+00:00'
   url: https://github.com/TheDenSS14/TheDen/pull/2490
+- author: GreggTheFather
+  changes:
+    - type: Tweak
+      message: (TORTUGA) Massive Overhaul, See PR or Mapping Thread for Details
+  id: 1883
+  time: '2026-06-25T08:25:30.0000000+00:00'
+  url: https://github.com/TheDenSS14/TheDen/pull/2694
+- author: LilNutters
+  changes:
+    - type: Tweak
+      message: >-
+        Holographic force fields no longer allow lasers to be fired through
+        them.
+  id: 1884
+  time: '2026-06-30T02:10:02.0000000+00:00'
+  url: https://github.com/TheDenSS14/TheDen/pull/2705
+- author: GreggTheFather
+  changes:
+    - type: Fix
+      message: (TORTUGA) Fixed various minor issues reported in the Mapping Thread
+  id: 1885
+  time: '2026-07-03T20:37:32.0000000+00:00'
+  url: https://github.com/TheDenSS14/TheDen/pull/2709
+- author: ItJustAni
+  changes:
+    - type: Add
+      message: >-
+        Added Ani Plushie to loadout, lottery, and plushie crate! Tea Party
+        time!
+  id: 1886
+  time: '2026-07-11T18:14:18.0000000+00:00'
+  url: https://github.com/TheDenSS14/TheDen/pull/2708
+- author: Dirius77
+  changes:
+    - type: Tweak
+      message: Made Force Field Projectors have a doafter to place their fields.
+  id: 1887
+  time: '2026-07-12T22:23:47.0000000+00:00'
+  url: https://github.com/TheDenSS14/TheDen/pull/2712

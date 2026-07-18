@@ -7,6 +7,7 @@
 # SPDX-FileCopyrightText: 2025 sleepyyapril
 # SPDX-FileCopyrightText: 2026 Asa
 # SPDX-FileCopyrightText: 2026 Eightballll
+# SPDX-FileCopyrightText: 2026 ItJustAni
 # SPDX-FileCopyrightText: 2026 Kellaris
 # SPDX-FileCopyrightText: 2026 crumchy
 # SPDX-FileCopyrightText: 2026 sheepie
@@ -280,3 +281,11 @@
   canBeHeirloom: true
   items:
   - PlushieJak
+
+- type: loadout
+  id: LoadoutPlushieAni
+  category: GeneralToys
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - PlushieAni
